@@ -7,10 +7,10 @@
       <h1
           data-aos="fade-right"
           data-aos-duration="800"
-          class="text-[60px] md:text-[84px] leading-[80.47px] tracking-[1.02px] font-bold text-white"
+          class="text-[60px] md:text-[113px] leading-[100.47px] tracking-[1.02px] font-semibold text-white"
       >
-        Ideas heladas,<br />
-        marcas
+        Hacemos Publicidad,<br />
+        que rompe
         <div
             data-aos="flip-up"
             data-aos-delay="800"
@@ -18,7 +18,7 @@
             class="inline-flex pt-3"
         >
           <span class="bg-[#A1CEFF] px-3 text-[#111822]">
-            encendidas
+            el hielo
           </span>
         </div>
       </h1>

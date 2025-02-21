@@ -54,10 +54,10 @@ const noticias = [
 
 <template>
   <div class="container-hero md:h-screen pb-3 md:pb-0">
-    <div class="container-all pt-28 md:pt-40">
+    <div class="container-all  flex items-start h-full pt-32 md:pt-40">
       <div>
         <h2
-            class="text-white text-[32px] text-shadow font-medium mb-6 md:mb-10"
+            class="text-white text-[28px] md:text-[42px] text-shadow font-bold mb-6 md:mb-10"
             data-aos="fade-up"
             data-aos-duration="1000"
         >

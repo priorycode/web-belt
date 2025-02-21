@@ -7,22 +7,19 @@ const cardsData = [
     title: 'Marketing',
     items: [
       {
-        gapClass: 'gap-1', // Se respeta exactamente la clase que usas en el primer ítem
-        subtitle: 'Estrategia Digital',
+        subtitle: 'Estrategia digital',
         description:
-            'Trazamos estrategias digitales B2B efectivas. Investigamos el mercado, conocemos a tu audiencia y te guiamos en su implementación a través de un sólido framework.'
+            'Trazamos estrategias digitales B2B efectivas. Investigamos el mercado, conocemos a tu audiencia y te guiamos en su implementación a través de sólidas estrategias comerciales.'
       },
       {
-        gapClass: 'gap-2',
         subtitle: 'Gestión de Redes Sociales',
         description:
-            'Trazamos estrategias digitales B2B efectivas. Investigamos el mercado, conocemos a tu audiencia y te guiamos en su implementación a través de un sólido framework.'
+            'Impulsa tu marca con gestión de redes sociales: contenido estratégico, anuncios efectivos, engagement, crecimiento y resultados medibles.'
       },
       {
-        gapClass: 'gap-2',
         subtitle: 'Social Media ADS',
         description:
-            'Humanizamos tus anuncios, conectando de manera auténtica con la audiencia para ampliar tu visibilidad, aumentar el tráfico y optimizar las conversiones.'
+            'Atrae clientes con Social Media Ads: segmentación precisa, anuncios impactantes, optimización constante y máximo retorno.'
       }
     ]
   },
@@ -30,28 +27,24 @@ const cardsData = [
     title: 'Diseño',
     items: [
       {
-        gapClass: 'gap-1',
         subtitle: 'Branding',
         description:
-            'Le damos poder a tu marca al crear una identidad sólida que refleje tus valores en cada detalle.'
+            'Desarrollamos tu branding con identidad sólida: logo, paleta de colores, tipografía, manual de marca y aplicaciones visuales.'
       },
       {
-        gapClass: 'gap-2',
         subtitle: 'Diseño de Catálogos',
         description:
-            'Creamos presentaciones comerciales con el mejor detalle para mejorar la buena imagen de tu empresa.'
+            'Potencia tus ventas con un catálogo comercial atractivo: diseño profesional, estructura estratégica e impacto visual asegurado.'
       },
       {
-        gapClass: 'gap-2',
         subtitle: 'Diseño Material POP',
         description:
-            'Diseñamos desde tarjetas de presentación, flyers y afiches hasta impresiones en gran formato.'
+            'Diseñamos material POP efectivo: banners, volantes, afiches, displays, stoppers y más, para destacar tu marca.'
       },
       {
-        gapClass: 'gap-2',
         subtitle: 'Ilustración',
         description:
-            'Capturamos la esencia de tu marca, ilustrando personajes y escenarios que reflejen tu identidad y transmitan tu mensaje de manera auténtica.'
+            'Creamos ilustraciones personalizadas para tu marca: personajes, iconografías, infografías, storyboards y gráficos exclusivos de alto impacto.'
       }
     ]
   },
@@ -59,22 +52,19 @@ const cardsData = [
     title: 'Tecnología',
     items: [
       {
-        gapClass: 'gap-1',
         subtitle: 'Desarrollo de páginas web',
         description:
-            'Damos vida a la interfaz de usuario de tu sitio web o app con un diseño atractivo e intuitivo.'
+            'Diseñamos y desarrollamos páginas web funcionales y atractivas: UX/UI, responsividad, optimización SEO y máxima velocidad.'
       },
       {
-        gapClass: 'gap-2',
-        subtitle: 'Desarrollo de Apps Shopify',
+        subtitle: 'Desarrollo de apps móviles',
         description:
-            'Resolvemos desafíos de e-commerce para mejorar la experiencia de compra de tus clientes.'
+            'Desarrollamos aplicaciones a medida: diseño intuitivo, experiencia optimizada, compatibilidad multiplataforma y funcionalidades personalizadas.'
       },
       {
-        gapClass: 'gap-2',
-        subtitle: 'Desarrollo de Apps móviles',
+        subtitle: 'Fotografía y video',
         description:
-            'Creamos puentes de conexión entre tus sistemas y aplicaciones, logrando una operación sincronizada y optimizada.'
+            'Ofrecemos servicios de video y fotografía profesional: producción, edición, sesiones creativas en set y con dron, contenido visual de alta calidad para tu marca.'
       }
     ]
   }
@@ -83,7 +73,7 @@ const cardsData = [
 
 <template>
   <div class="container-hero md:h-screen pb-3 md:pb-0 ">
-    <div class="container-all flex items-start pt-36 md:items-center  h-full md:pt-16">
+    <div class="container-all flex items-start pt-36  h-full md:pt-40">
       <div class="grid grid-cols-1 md:grid-cols-3 gap-[28px] md:gap-[48px]">
         <!-- Recorrer el array de cards -->
         <div
@@ -102,12 +92,12 @@ const cardsData = [
           <!-- Sección de ítems dentro de cada card -->
           <div class="flex flex-col gap-3">
             <div v-for="(item, idx) in card.items" :key="idx">
-              <div :class="`flex items-center ${item.gapClass} text-[#A0CEFF]`">
+              <div :class="`flex items-center gap-3 text-[#A0CEFF]`">
                 <IconDirectionSignFilled class="w-6 h-6" />
-                <h3 class="text-[18px] md:text-[24px] "
+                <h3 class="text-[18px] md:text-[24px] leading-7"
                 >{{ item.subtitle }}</h3>
               </div>
-              <p class="ml-8 text-white text-[12px]"
+              <p class="ml-12 mt-2 text-white text-[12px]"
               >
                 {{ item.description }}
               </p>

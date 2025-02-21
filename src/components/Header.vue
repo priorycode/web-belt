@@ -26,7 +26,7 @@ const getLinkClasses = (path) => [
                 : 'bg-[#28355F]'"
        class="z-100"
   >
-    <header class="container-all py-5 flex justify-between items-center relative">
+    <header class="container-all py-4 flex justify-between items-center relative">
 
       <!-- LOGO -->
       <a href="/">

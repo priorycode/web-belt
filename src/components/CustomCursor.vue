@@ -1,14 +1,17 @@
 <template>
-  <!-- Renderizamos la bolita solo si está dentro de la página -->
-  <div
+  <!-- Mostramos el ícono solo si el mouse está dentro de la página -->
+  <IconDelfin
       v-if="isMouseInside"
-      class="cursor-follower"
+      class="cursor-follower hidden md:block"
       :style="cursorStyle"
   />
 </template>
 
 <script setup>
 import { ref, onMounted, onUnmounted, computed } from 'vue';
+// Importamos el ícono de Tabler Icons
+import { IconBallVolleyball } from '@tabler/icons-vue';
+import IconDelfin from "@/components/img/IconDelfin.vue";
 
 const x = ref(0);
 const y = ref(0);
@@ -27,8 +30,8 @@ function handleMouseMove(e) {
 }
 
 function handleMouseOut(e) {
+  // Si no hay elemento relacionado, significa que el cursor salió del documento
   if (!e.relatedTarget) {
-    // El cursor ha salido del documento
     isMouseInside.value = false;
   }
 }
@@ -69,17 +72,18 @@ const cursorStyle = computed(() => ({
 <style scoped>
 .cursor-follower {
   position: fixed;
-  top: -9px;
-  left: -15px;
+  top: -15px;
+  left: -18px;
   z-index: 999999;
-  width: 15px;
-  height: 15px;
-  border-radius: 50%;
 
-  /* Color de fondo ajustable */
-  background-color: rgba(255, 0, 0, 0.5);
+  /* Ajusta el tamaño del ícono a tu gusto */
+  width: 30px;
+  height: 30px;
 
   /* Para no interferir con clics */
   pointer-events: none;
+
+  /* Ajusta el color del ícono, si quieres */
+  color: #ff0000;
 }
 </style>

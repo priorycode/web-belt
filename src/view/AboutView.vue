@@ -4,14 +4,17 @@
 
 <template>
   <div class="container-hero h-screen ">
-    <div class="container-all flex items-center pt-16 h-full">
+    <div class="container-all flex items-start pt-32 md:pt-40 h-full">
       <div class="text-white max-w-[560px]">
-        <h2 class="text-[28px] md:text-[50px] font-extrabold mb-[30px] md:mb-[39px]" data-aos="fade-up" data-aos-duration="1000">¿Donde nace Belt?</h2>
-        <p class="mb-[20px] md:mb-[41px] text-justify text-[14px] md:text-[16px] font-normal" data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000">
-          En el año 2018, un joven colombiano profesional, graduado en Mercadeo y Publicidad, se encontró atrapado en la monotonía de un empleo bancario que le robaba su pasión y creatividad. Consciente de las limitadas oportunidades laborales y los bajos salarios en su país, tomó una decisión audaz: dejar atrás la rutina y lanzarse a la mayor aventura de su vida. Su destino fue un país nórdico, donde comenzó a trabajar en una fábrica de producción de pescado. A pesar del esfuerzo físico y las largas jornadas, halló en los atardeceres del mar Báltico un refugio para su mente y espíritu. Fue en esa orilla helada, mirando el horizonte teñido de colores fríos, donde nació su verdadera inspiración. Desde su computadora, comenzó a diseñar logotipos para negocios en Polonia y América Latina, aferrándose a la creencia de que su creatividad lo llevaría lejos. Con el tiempo, su emprendimiento cobró vida, y decidió bautizarlo “Belt”, en honor al Báltico, cuyo nombre en latín le recordó el lugar donde todo comenzó.
+        <h2 class="text-shadow text-[28px] md:text-[42px] font-bold mb-[30px] md:mb-[24px]" data-aos="fade-up" data-aos-duration="1000">¿Donde nace Belt?</h2>
+        <p class="mb-[20px] md:mb-[10px] text-justify text-[14px] md:text-[16px] font-normal" data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000">
+          En el año 2018, dos jóvenes colombianos, ambos profesionales en Mercadeo y Publicidad, se encontraron atrapados en la monotonía de empleos que apagaban su pasión y creatividad. Uno trabajaba en el sector bancario; el otro, en una agencia donde las ideas no tenían espacio para volar. Cansados de las limitadas oportunidades laborales y los bajos salarios en su país, tomaron una decisión audaz: dejar atrás la rutina y lanzarse a la mayor aventura de sus vidas.
         </p>
-        <p class="text-center text-[14px] md:text-[16px] font-normal" data-aos="fade-zoom" data-aos-delay="1000" data-aos-duration="1000">
-          Belt no solo representa una marca, sino también un símbolo de valentía, reinvención y el poder de convertir un sueño en realidad, sin importar la distancia.
+        <p class="mb-[20px] md:mb-[10px] text-justify text-[14px] md:text-[16px] font-normal" data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000">
+          Su destino fue un país nórdico, donde comenzaron a trabajar en una fábrica de producción de pescado. Entre jornadas agotadoras y temperaturas implacables, encontraron en los atardeceres del mar Báltico un refugio para su mente y espíritu. En aquellas orillas heladas, mirando el horizonte teñido de colores fríos, surgió su verdadera inspiración.
+        </p>
+        <p class="mb-[20px] md:mb-[41px] text-justify text-[14px] md:text-[16px] font-normal" data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000">
+          Desde sus computadoras, en las noches silenciosas del norte, comenzaron a diseñar logotipos para negocios locales de Polonia y América Latina, convencidos de que su creatividad los llevaría lejos. Con el tiempo, su emprendimiento cobró vida, y juntos decidieron bautizarlo "Belt" en honor al Báltico, cuyo nombre en latín le recordó el lugar donde todo comenzó.
         </p>
       </div>
     </div>
@@ -30,6 +33,10 @@
   .container-hero{
     background-position: left;
   }
+}
+
+.text-shadow{
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 </style>
